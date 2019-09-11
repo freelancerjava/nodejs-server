@@ -1,6 +1,6 @@
 const http = require('http')
 const port = 80;
-const host = 'localhost';
+const host = 'https://fathomless-lowlands-45446.herokuapp.com';
 const requestHandler = (request, response) => {
     console.log(request.url)
     response.end('Hello Node.js Server!')
