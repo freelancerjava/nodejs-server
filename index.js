@@ -1,5 +1,5 @@
 const http = require('http')
-const port = 8080;
+const port = 80;
 const requestHandler = (request, response) => {
     console.log(request.url)
     response.end('Hello Node.js Server!')
