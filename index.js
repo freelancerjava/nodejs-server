@@ -1,11 +1,12 @@
 const http = require('http')
 const port = 80;
+const host = 'localhost';
 const requestHandler = (request, response) => {
     console.log(request.url)
     response.end('Hello Node.js Server!')
 }
 const server = http.createServer(requestHandler)
-server.listen(port, (err) => {
+server.listen(port, host,(err) => {
     if (err) {
         return console.log('something bad happened', err)
     }
